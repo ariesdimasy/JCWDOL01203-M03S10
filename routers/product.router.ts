@@ -4,8 +4,9 @@ import { adminGuard, userGuard, verifyToken } from "../middlewares/auth.middlewa
 
 const router: Router = express.Router()
 
+router.get("/", ProductController.getProduct)
 router.get("/product-secret", verifyToken, adminGuard, ProductController.getProductSecret)
 router.get("/product-user", verifyToken, userGuard, ProductController.getProductUser)
-router.get("/product", ProductController.getProduct)
+
 
 export default router

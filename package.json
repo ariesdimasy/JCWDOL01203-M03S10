@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx nodemon main.ts && npx prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,12 +15,16 @@
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.5",
     "@types/node": "^20.10.7",
+    "@types/pino": "^7.0.5",
+    "@types/redis": "^4.0.11",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.0.2",
+    "pino": "^8.17.2",
     "prisma": "^5.7.1",
+    "redis": "^4.6.12",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
